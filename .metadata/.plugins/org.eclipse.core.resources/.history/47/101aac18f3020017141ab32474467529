@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.Vector;
+
+public class Main {
+	static Vector<Integer> a[] = (Vector<Integer>[]) new Vector[1001];
+	public static final int[] dx = {0,0,1,-1};
+	public static final int[] dy = {1,-1,0,0};
+	public static int int M,N;
+	public static void main(String[] args){
+		Scanner scanner = new Scanner(System.in);
+		
+		M = scanner.nextInt();
+		N = scanner.nextInt();
+		
+		for(int i = 0 ; i < M ; i++){
+			for(int j = 0 ; j < N ; j++){
+				
+			}
+		}
+	}
+}

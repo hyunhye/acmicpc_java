@@ -1,0 +1,33 @@
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+import java.util.Vector;
+
+public class Main {
+	public static int[][] a;
+	public static int[][] d;
+	public static final int[] dx = {0,0,1,-1};
+	public static final int[] dy = {1,-1,0,0};
+	public static int M,N;
+	public static void main(String[] args){
+		Scanner scanner = new Scanner(System.in);
+		
+		M = scanner.nextInt();
+		N = scanner.nextInt();
+		
+		a = new int[M][N];
+		d = new int[M][N];
+		Queue<HashMap<Integer, Integer>> q = new LinkedList<HashMap<Integer, Integer>>();
+ 
+		for(int i = 0 ; i < N ; i++){
+			for(int j = 0 ; j < M ; j++){
+				a[i][j] = scanner.nextInt();
+				d[i][j] = -1;
+				if(a[i][j] == 1){
+					q.push(i,j);
+				}
+			}
+		}
+	}
+}
